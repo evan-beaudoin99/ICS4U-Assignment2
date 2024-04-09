@@ -15,6 +15,10 @@ function isDigit(char) {
 function blowUp(input) {
   let newString = ""
 
+  if (input === '' || input.length === 1 || isDigit(input[input.length - 1]) === true) {
+    return "Invalid String"
+  }
+
   for (let counter1 = 0; counter1 < input.length; counter1++) {
     if (isDigit(input[counter1])) { // Checks if value is a digit
       // Checks if next digit is also a number
