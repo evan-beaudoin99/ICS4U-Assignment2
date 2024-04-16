@@ -14,32 +14,37 @@ function isDigit(char) {
 
 function blowUp(input) {
   let newString = ""
+  let returnValue = ""
 
   if (input === '' || input.length === 1 || isDigit(input[input.length - 1]) === true) {
-    return "Invalid String"
+    returnValue = "Invalid String"
   }
 
-  for (let counter1 = 0; counter1 < input.length; counter1++) {
-    if (isDigit(input[counter1])) { // Checks if value is a digit
+  else {
+
+    for (let counter1 = 0; counter1 < input.length; counter1++) {
+      if (isDigit(input[counter1])) { // Checks if value is a digit
       // Checks if next digit is also a number
-      if (isDigit(input[counter1 + 1])) { 
+        if (isDigit(input[counter1 + 1])) { 
         // If yes it ignores the previous number
-        continue 
-      }
-      else {
+          continue 
+        }
+        else {
         // Multiplies letters by their respected values
-        let mulitplier = parseInt(input[counter1])
-        for (let counter2 = 0; counter2 < mulitplier; counter2++) {
+          let mulitplier = parseInt(input[counter1])
+          for (let counter2 = 0; counter2 < mulitplier; counter2++) {
           // Appends characters to a new string
-          newString += input[counter1 + 1] 
+            newString += input[counter1 + 1] 
+          }
         }
       }
+      else { // If it isn't go to the next value
+        continue 
+      }
     }
-    else { // If it isn't go to the next value
-      continue 
-    }
+    returnValue = newString
   }
-  return newString
+  return returnValue
 }
 
 let newString = ""
