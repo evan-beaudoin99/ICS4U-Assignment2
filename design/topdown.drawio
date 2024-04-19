@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram id="X57YnfuRQmc_oqfZ5gvb" name="Page-1">
-        <mxGraphModel dx="1326" dy="740" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+        <mxGraphModel dx="1086" dy="658" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -47,16 +47,16 @@
                 <mxCell id="5" value="Output" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="770" y="190" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="9" value="User inputs a string of letters and numbers" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="9" value="Input a string of numbers and letters" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="55" y="300" width="130" height="60" as="geometry"/>
                 </mxCell>
                 <mxCell id="11" value="Determine whether a character represents a digit in a string" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="220" y="300" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="13" value="Processes a given string then expands the numbers of characters based on numeric multipliers (digit before letter)" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="13" value="If the counter is on a letter, and there is a number before append to a new string the letter times the number." style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="380" y="300" width="180" height="70" as="geometry"/>
                 </mxCell>
-                <mxCell id="19" value="Print &quot;The blown up string is: {finalString}&quot;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
+                <mxCell id="19" value="Print &quot;The blown up string is: {fnewString}&quot;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
                     <mxGeometry x="590" y="300" width="130" height="70" as="geometry"/>
                 </mxCell>
                 <mxCell id="21" value="Print &quot;Invalid Input&quot;" style="rounded=0;whiteSpace=wrap;html=1;" parent="1" vertex="1">
